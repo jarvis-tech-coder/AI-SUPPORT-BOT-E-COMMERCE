@@ -1,6 +1,6 @@
 (function() {
     // --- 1. CONFIGURATION ---
-    const API_URL = "http://127.0.0.1:8000/chat"; // Backend Address
+    const API_URL = "https://ai-support-bot-e-commerce.onrender.com/chat"; // Backend Address
 
     // --- 2. INJECT CSS (Styles) ---
     const style = document.createElement('style');
