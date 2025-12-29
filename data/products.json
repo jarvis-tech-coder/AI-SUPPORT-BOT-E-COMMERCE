@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Ultra Gaming Laptop",
+        "price": "$1500",
+        "description": "Best for heavy gaming, 32GB RAM",
+        "stock": "In Stock"
+    },
+    {
+        "name": "Wireless Earbuds",
+        "price": "$80",
+        "description": "Noise cancelling, 20hr battery",
+        "stock": "Out of Stock"
+    },
+    {
+        "name": "4K Monitor 27-inch",
+        "price": "$300",
+        "description": "144Hz Refresh Rate, HDR support",
+        "stock": "In Stock"
+    }
+]

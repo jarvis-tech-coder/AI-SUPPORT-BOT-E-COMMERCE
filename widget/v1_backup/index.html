@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tech Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div style="padding: 50px; text-align: center; font-family: sans-serif;">
+        <h1>Welcome to My Tech Shop 💻</h1>
+        <p>We sell the best laptops and gadgets.</p>
+        <p>(Niche right corner mein Chat Button dabayein 👇)</p>
+    </div>
+
+    <div id="chat-widget">
+        <div id="chat-box" class="hidden">
+            <div id="chat-header">
+                <span>Support Agent 🤖</span>
+                <button onclick="toggleChat()">✖</button>
+            </div>
+            <div id="chat-messages">
+                <div class="bot-msg">Hello! How can I help you today?</div>
+            </div>
+            <div id="chat-input-area">
+                <input type="text" id="user-input" placeholder="Ask about products..." onkeypress="handleEnter(event)">
+                <button onclick="sendMessage()">➤</button>
+            </div>
+        </div>
+
+        <button id="chat-btn" onclick="toggleChat()">💬</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
