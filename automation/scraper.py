@@ -42,7 +42,7 @@ def run_scraper():
     with open(json_file_path, "w") as json_file:
         json.dump(extracted_data, json_file, indent=4)
 
-    print(f"✅ Success! {len(extracted_data)} products extracted aur 'data/products.json' mein save ho gaye.")
+    print(f"Success! {len(extracted_data)} products extracted aur 'data/products.json' mein save ho gaye.")
 
 if __name__ == "__main__":
     run_scraper()
