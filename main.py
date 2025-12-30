@@ -7,7 +7,6 @@ import google.generativeai as genai
 from dotenv import load_dotenv
 
 # 1. Setup: Load Environment Variables
-# Key hamesha environment variable se aani chahiye
 load_dotenv()
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
@@ -27,7 +26,6 @@ app.add_middleware(
 )
 
 # 3. Data Loading Function (JSON padhne ke liye)
-# Purana load_products hata dein aur ye naya function dalein
 def load_knowledge_base():
     knowledge = {}
     
@@ -59,7 +57,6 @@ async def chat_endpoint(request: UserRequest):
     # Naya function call karein
     knowledge_data = load_knowledge_base()
     
-    # --- UPDATED CONTEXT INJECTION ---
     system_prompt = f"""
     You are a smart Customer Support Agent for 'TechShop'.
     
